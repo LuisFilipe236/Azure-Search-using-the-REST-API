@@ -58,7 +58,7 @@ $body = @"
 {
     "name": "hotels",  
     "fields": [
-        {"name": "hotelId", "type": "Edm.String", "key": true, "searchable": false, "facetable": false},
+        {"name": "hotelId", "type": "Edm.String", "key": true, "searchable": false, "sortable": false, "facetable": false},
         {"name": "baseRate", "type": "Edm.Double"},
         {"name": "description", "type": "Edm.String", "filterable": false, "sortable": false, "facetable": false},
         {"name": "description_fr", "type": "Edm.String", "filterable": false, "sortable": false, "facetable": false, "analyzer": "fr.lucene"},
