@@ -4,7 +4,7 @@ platforms: rest
 author: brjohnstmsft
 ---
 
-# Getting Started with Azure Search using .NET
+# Getting Started with Azure Search using the REST API
 
 This sample includes scripted REST API requests that are meant to help when getting started with the Azure Search REST API. The sample REST API requests show how to:
 
