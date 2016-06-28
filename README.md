@@ -23,3 +23,7 @@ For more details on these samples, please refer to these articles on Azure.com:
   - [Create an Azure Search index using the REST API](https://azure.microsoft.com/documentation/articles/search-create-index-rest-api/).
   - [Import data to Azure Search using the REST API](https://azure.microsoft.com/documentation/articles/search-import-data-rest-api/).
   - [Query your Azure Search index using the REST API](https://azure.microsoft.com/documentation/articles/search-query-rest-api/).
+
+---
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
