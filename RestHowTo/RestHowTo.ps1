@@ -74,7 +74,7 @@ $body = @"
 }
 "@
 
-Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes?api-version=2015-02-28" $apiKey $body
+Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes?api-version=2016-09-01" $apiKey $body
 
 $body = @"
 {
@@ -123,7 +123,7 @@ $body = @"
 }
 "@
 
-Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes/hotels/docs/index?api-version=2015-02-28" $apiKey $body
+Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes/hotels/docs/index?api-version=2016-09-01" $apiKey $body
 
 Write-Line "`nWaiting for documents to be indexed..."
 
@@ -131,7 +131,7 @@ Start-Sleep -Seconds 2
 
 Write-Line "`nSearch the entire index for the term 'budget' and return only the hotelName field:"
 
-Execute-Request GET "https://$searchServiceName.search.windows.net/indexes/hotels/docs?search=budget&`$select=hotelName&api-version=2015-02-28" $apiKey
+Execute-Request GET "https://$searchServiceName.search.windows.net/indexes/hotels/docs?search=budget&`$select=hotelName&api-version=2016-09-01" $apiKey
 
 $body = @"
 {
@@ -140,11 +140,11 @@ $body = @"
 }
 "@
 
-Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes/hotels/docs/search?api-version=2015-02-28" $apiKey $body
+Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes/hotels/docs/search?api-version=2016-09-01" $apiKey $body
 
 Write-Line "`nSearch the entire index for hotels cheaper than `$150 per night and return the hotelId and description:"
 
-Execute-Request GET "https://$searchServiceName.search.windows.net/indexes/hotels/docs?search=*&`$filter=baseRate lt 150&`$select=hotelId,description&api-version=2015-02-28" $apiKey
+Execute-Request GET "https://$searchServiceName.search.windows.net/indexes/hotels/docs?search=*&`$filter=baseRate lt 150&`$select=hotelId,description&api-version=2016-09-01" $apiKey
 
 $body = @"
 {
@@ -154,11 +154,11 @@ $body = @"
 }
 "@
 
-Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes/hotels/docs/search?api-version=2015-02-28" $apiKey $body
+Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes/hotels/docs/search?api-version=2016-09-01" $apiKey $body
 
 Write-Line "`nSearch the entire index, order by a specific field (lastRenovationDate) in descending order, take the top two results, and show only hotelName and lastRenovationDate:"
 
-Execute-Request GET "https://$searchServiceName.search.windows.net/indexes/hotels/docs?search=*&`$top=2&`$orderby=lastRenovationDate desc&`$select=hotelName,lastRenovationDate&api-version=2015-02-28" $apiKey
+Execute-Request GET "https://$searchServiceName.search.windows.net/indexes/hotels/docs?search=*&`$top=2&`$orderby=lastRenovationDate desc&`$select=hotelName,lastRenovationDate&api-version=2016-09-01" $apiKey
 
 $body = @"
 {
@@ -169,11 +169,11 @@ $body = @"
 }
 "@
 
-Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes/hotels/docs/search?api-version=2015-02-28" $apiKey $body
+Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes/hotels/docs/search?api-version=2016-09-01" $apiKey $body
 
 Write-Line "`nSearch the entire index for the term 'motel':"
 
-Execute-Request GET "https://$searchServiceName.search.windows.net/indexes/hotels/docs?search=motel&api-version=2015-02-28" $apiKey
+Execute-Request GET "https://$searchServiceName.search.windows.net/indexes/hotels/docs?search=motel&api-version=2016-09-01" $apiKey
 
 $body = @"
 {
@@ -181,6 +181,6 @@ $body = @"
 }
 "@
 
-Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes/hotels/docs/search?api-version=2015-02-28" $apiKey $body
+Execute-RequestWithBody POST "https://$searchServiceName.search.windows.net/indexes/hotels/docs/search?api-version=2016-09-01" $apiKey $body
 
-Execute-Request DELETE "https://$searchServiceName.search.windows.net/indexes/hotels?api-version=2015-02-28" $apiKey
+Execute-Request DELETE "https://$searchServiceName.search.windows.net/indexes/hotels?api-version=2016-09-01" $apiKey
