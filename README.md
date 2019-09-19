@@ -28,16 +28,6 @@ For more details on these samples, please refer to these articles on Azure.com:
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-(withouttag)
-[![Github All Releases](https://img.shields.io/github/downloads-pre/LuisFilipe236/Storage-Helper-SAS-Tool/v1.0.2/total)]()
-[![Github All Releases](https://img.shields.io/github/downloads/LuisFilipe236/Storage-Helper-SAS-Tool/v1.0.2/total)]()
-[![Github All Releases](https://img.shields.io/github/downloads/LuisFilipe236/Storage-Helper-SAS-Tool/v1.0.2/Storage.Helper.SAS.Tool.Installer.msi)]()
-[![Github All Releases](https://img.shields.io/github/downloads-pre/LuisFilipe236/Storage-Helper-SAS-Tool/v1.0.2/Storage.Helper.SAS.Tool.Installer.msi?style=plastic)]()
 
-(with tag)
-[![Github All Releases](https://img.shields.io/github/downloads-pre/LuisFilipe236/Storage-Helper-SAS-Tool/tag/v1.0.2/total)]()
-[![Github All Releases](https://img.shields.io/github/downloads/LuisFilipe236/Storage-Helper-SAS-Tool/tag/v1.0.2/total)]()
-[![Github All Releases](https://img.shields.io/github/downloads/LuisFilipe236/Storage-Helper-SAS-Tool/tag/v1.0.2/Storage.Helper.SAS.Tool.Installer.msi)]()
-[![Github All Releases](https://img.shields.io/github/downloads-pre/LuisFilipe236/Storage-Helper-SAS-Tool/tag/v1.0.2/Storage.Helper.SAS.Tool.Installer.msi)]()
 
 
